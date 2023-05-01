@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name='description' content='Web development for sustainable businesses. Win over your customers and build a strong brand with a modern website.' />
         <link rel="icon" href="/icons/favicon-32x32.png" />
         {/* <!-- Google tag (gtag.js) --> */}
+      </Head>
         <Script async
           src="https://www.googletagmanager.com/gtag/js?id=G-MP1BZY54FV"
           strategy="afterInteractive" />
@@ -21,7 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
         gtag('config', 'G-MP1BZY54FV');`}
         </Script>
-      </Head>
       <Component {...pageProps} />
     </>
   )

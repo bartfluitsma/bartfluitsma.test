@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/icons/favicon-32x32.png" />
         {/* <!-- Google tag (gtag.js) --> */}
       </Head>
-        <Script async
+        <Script 
+          id='google-tag'
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-MP1BZY54FV"
           strategy="afterInteractive" />
         <Script>

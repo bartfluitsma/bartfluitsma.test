@@ -14,6 +14,7 @@ const PortfolioImageGrid = () => {
             height={1000}
             width={1000}
             className="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-105"
+            priority
           />
         </Link>
         </div>
@@ -28,6 +29,7 @@ const PortfolioImageGrid = () => {
                     height={500}
                     width={500}
                     className="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-105"
+                    priority
                   />
                 </Link>
               </div>

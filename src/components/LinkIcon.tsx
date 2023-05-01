@@ -36,6 +36,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({ name, linkToWeb, icon }) => {
                             alt='#'
                             width={12}
                             height={10}
+                            priority
                         />
                     </span>
                 )}

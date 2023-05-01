@@ -10,7 +10,7 @@ const Contact = () => (
             Get in touch
         </Heading>
         <div className={`${messageFont.className} mt-10`}>
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden">
                     <label>

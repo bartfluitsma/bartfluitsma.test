@@ -1,11 +1,8 @@
 import Layout from '@/components/Layout';
 import SocialsContact from '../components/SocialsContact';
-import { Karla } from 'next/font/google'
-import PortfolioGrid from '@/components/PortfolioGrid';
 import Text from '@/components/Text';
 import Heading from '@/components/Headings';
-
-const titleFont = Karla({ subsets: ['latin'], weight: '600' })
+import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 
 export default function Home() {
   return (
@@ -19,7 +16,7 @@ export default function Home() {
         </Text>
         <SocialsContact />
       </div>
-      <PortfolioGrid />
+      <PortfolioImageGrid />
     </Layout>
   )
 }

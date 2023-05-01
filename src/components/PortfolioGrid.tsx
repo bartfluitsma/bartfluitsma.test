@@ -1,22 +1,40 @@
+import { useState } from 'react';
 import { portfolioItems as portfolioItems } from "@/data/data"
 import PortfolioCard from "./PortfolioCard"
 import Heading from "./Headings"
+import Text from "./Text"
 
-const PortfolioGrid = () => (
+const PortfolioGrid = () => {
+  const [showMore, setShowMore] = useState(false);
+  const visibleItems = showMore ? portfolioItems : portfolioItems.slice(0, 2);
+
+  const handleShowMore = () => {
+    setShowMore(true);
+  }
+
+  return (
     <>
-    <div>
-        <Heading as={2}>Some of my projects</Heading>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-          {portfolioItems.map((item, key) =>
+      <div>
+        <Heading as={1}>My projects</Heading>
+        <Text>
+          I always give 100% of my attention to every project I work on. My focus is on creating websites that are easy for both owners and visitors to use, while also incorporating logical design principles and maintaining optimal speed. Have a look at some of my projects below.
+        </Text>
+        <div className="mt-10">
+          {visibleItems.map((item, key) =>
             <PortfolioCard
+              anchor={item.anchor}
               title={item.title}
               image={item.image}
+              description={item.description}
+              website={item.website}
               key={key}
             />
           )}
-        </div>
+          {!showMore && <button id='read-more' className="mt-4 text-blue-600 hover:text-blue-800" onClick={handleShowMore}>Show more projects</button>}
+        </div> 
       </div>
     </>
-)
+  );
+};
 
-export default PortfolioGrid
+export default PortfolioGrid;

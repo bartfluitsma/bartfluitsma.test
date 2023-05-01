@@ -11,19 +11,19 @@ type HeadingProps = {
 const Heading = ({ children, as }: HeadingProps) => {
   if (as == 1) {
     return (
-      <h1 className={`text-4xl font-light tracking-wide leading-7 my-3 ${titleFont.className}`}>
+      <h1 className={`text-4xl font-light tracking-wide leading-7 my-3 pb-2 ${titleFont.className}`}>
         {children}
       </h1>
     );
   } else if (as == 2) {
     return (
-      <h2 className={`text-3xl font-light tracking-wide leading-7 my-3 ${titleFont.className}`}>
+      <h2 className={`text-2xl font-light tracking-wide leading-7 my-3 ${titleFont.className}`}>
         {children}
       </h2>
     );
   } else {
     return (
-      <h3 className={`text-2l font-light tracking-wide leading-7 my-3 ${titleFont.className}`}>
+      <h3 className={`text-xl font-light tracking-wide leading-7 ${titleFont.className}`}>
         {children}
       </h3>
     );

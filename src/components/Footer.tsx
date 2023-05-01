@@ -1,7 +1,7 @@
 import Contact from "./Contact"
 
 const Footer = () => (
-    <div>
+    <div className="py-20">
         <Contact />
     </div>
 )

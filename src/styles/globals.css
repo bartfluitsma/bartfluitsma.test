@@ -24,3 +24,12 @@ body {
     padding: 0px 20vw;
   }
 }
+
+.underline-link{
+  font-weight: 800;
+  border-bottom: 2px solid #eee;
+}
+
+.underline-link:hover{
+  border-bottom: 2px solid #000;
+}

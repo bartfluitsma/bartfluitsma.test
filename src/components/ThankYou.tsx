@@ -5,7 +5,7 @@ const ThankYou = () => (
     <>
       <Layout>
         <Text>
-          Thank you for your message. I'll get back to you as soon as possible.
+          Thank you for your message. I&apos;ll get back to you as soon as possible.
         </Text>
       </Layout>
     </>

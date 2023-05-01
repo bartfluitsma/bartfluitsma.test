@@ -37,7 +37,7 @@ const Contact = () => (
                 <div className="flex flex-col w-full mb-6 md:mb-0">
                     <label htmlFor="yourmessage" className={`text-gray-700 font-bold mb-2 ${messageLabelFont.className}`}>Message</label>
                     <div className="relative">
-                        <textarea name="message" id="yourmessage" rows="5" placeholder="Enter your message" required className="w-full py-2 leading-snug border-b-2 border-gray-400 focus:outline-none focus:border-black"></textarea>
+                        <textarea name="message" id="yourmessage" placeholder="Enter your message" required className="w-full py-2 leading-snug border-b-2 border-gray-400 focus:outline-none focus:border-black"></textarea>
                         <div className="absolute right-0 top-0 mt-3 mr-3 text-gray-600">
                             <i className="fas fa-comment-alt"></i>
                         </div>

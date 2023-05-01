@@ -13,8 +13,8 @@ type PortfolioCardProps = {
 
 const PortfolioCard = ({ title, image, description, website, anchor }: PortfolioCardProps) => {
   return (
-    <div id={anchor} className='flex border-b-2  first:border-t-2  py-6 '>
-      <div className='w-2/5 pr-4'>
+    <div id={anchor} className='md:flex border-b-2 first:border-t-2 py-6 '>
+      <div className='md:w-2/5 md:pr-4'>
         <Heading as={2}>{title}</Heading>
         <Text small>{description}</Text>
         <div className='w-fit'>
@@ -27,7 +27,7 @@ const PortfolioCard = ({ title, image, description, website, anchor }: Portfolio
           </div>
         </div>
       </div>
-      <div className='w-3/5 pl-4'>
+      <div className='md:w-3/5 md:pl-4 my-4 md:my-0'>
         <Image
           src={image}
           alt={title}

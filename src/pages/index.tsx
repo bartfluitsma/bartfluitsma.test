@@ -7,7 +7,7 @@ import PortfolioImageGrid from '@/components/PortfolioImageGrid';
 export default function Home() {
   return (
     <Layout>
-      <div className='mb-20'>
+      <div className='mb-10 md:mb-20'>
         <Heading as={1}>
           Hello, I&apos;m Bart
         </Heading>

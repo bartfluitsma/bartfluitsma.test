@@ -10,9 +10,13 @@ const Contact = () => (
             Get in touch
         </Heading>
         <div className={`${messageFont.className} mt-10`}>
-            <form name="contact" method="POST" data-netlify="true" >
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contact" />
-
+                <p className="hidden">
+                    <label>
+                        Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                    </label>
+                </p>
                 <div className="flex flex-col md:flex-row md:items-end md:mb-10">
                     <div className="flex flex-col w-full md:w-1/2 mb-6 md:mb-0">
                         <label htmlFor="yourname" className={`text-gray-700 font-bold mb-2 ${messageLabelFont.className}`}>Your Name</label>

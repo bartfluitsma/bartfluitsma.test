@@ -2,6 +2,7 @@ import { Karla } from 'next/font/google';
 import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const bodyFont = Karla({ subsets: ['latin'], weight: '600' });
 
@@ -13,6 +14,8 @@ interface CustomLinkProps {
 
 const CustomLink: React.FC<CustomLinkProps> = ({ name, linkToWeb, icon }) => {
     const [hovered, setHovered] = useState(false);
+    const { pathname } = useRouter();
+    const isCurrentPath = pathname === linkToWeb;
     const Component = icon ? 'a' : Link;
 
     return (
@@ -38,7 +41,7 @@ const CustomLink: React.FC<CustomLinkProps> = ({ name, linkToWeb, icon }) => {
                 )}
             </Component>
             <div 
-                className={`fill-div bg-black absolute bottom-[-3px] left-0 ${hovered ? "w-full" : "w-0"} transition-all duration-500 ease-in-out`}
+                className={`fill-div bg-black absolute bottom-[-3px] left-0 ${hovered ? "w-full" : "w-0"} transition-all duration-500 ease-in-out ${isCurrentPath ? 'w-full' : ''}`}
                 style={{ height: '3px'}}
             />
         </div>

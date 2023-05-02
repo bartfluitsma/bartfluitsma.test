@@ -33,3 +33,7 @@ body {
 .underline-link:hover{
   border-bottom: 2px solid #000;
 }
+
+html{
+  scroll-behavior: smooth;
+}

@@ -11,7 +11,7 @@ const Custom404 = () => {
                     404 - page not found
                 </Heading>
                 <p className="text-lg text-gray-600 mb-8">
-                    Oops! Looks like the page you're looking for doesn't exist.
+                    Oops! Looks like the page you&apos;re looking for doesn&apos;t exist.
                 </p>
                 <div className='w-fit'>
                     <CustomLink name='Visit homepage' linkToWeb='/' icon={false} />

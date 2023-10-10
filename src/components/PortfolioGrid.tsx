@@ -17,7 +17,7 @@ const PortfolioGrid = () => {
       <div>
         <Heading as={1}>My projects</Heading>
         <Text>
-          I always give 100% of my attention to every project I work on. My focus is on creating websites that are easy for both owners and visitors to use, while also incorporating logical design principles and maintaining optimal speed. Have a look at some of my projects below.
+          When working on a project, I always give a 100%. My focus is on creating websites that are easy for both owners and visitors to use, while also incorporating logical design principles and maintaining optimal speed. Have a look at some of my projects below.
         </Text>
         <div className="mt-10">
           {visibleItems.map((item, key) =>

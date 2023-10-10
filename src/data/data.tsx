@@ -1,5 +1,12 @@
 export const portfolioItems = [
     {
+        title: 'The Movement',
+        image: '/images/the-movement-website-mockup.png',
+        description: 'The Movement offers personal training for bootcamps and breathwork.<br><br>The challenge was to design <i>two contrasting yet cohesive</i> landing pages: one representing strength and energy, while the other evoking peace, tranquility, and mindfulness.',
+        website: 'https://join-themovement.nl',
+        anchor: 'the-movement',
+      },
+    {
       title: 'TEN women community',
       image: '/images/ten-women-website-mockup.png',
       description: 'TEN women is a community for entrepreneurial women.<br><br>I built their <i>membership-based website</i>, which features custom-coded PHP functionalities such as a <i>filterable members directory</i>, creating a <i>personal favorites list</i>, and <i>file sharing</i>.',

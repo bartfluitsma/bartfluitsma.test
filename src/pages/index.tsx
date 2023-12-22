@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <div className='mb-10 md:mb-20'>
         <Heading as={1}>
-          Hello, I&apos;m Bart
+          Hello, I&apos;m <span className='christmas-hat'>Bart</span>
         </Heading>
         <Text>
           I am a self-taught developer who enjoys creating websites for starting companies, with a particular interest in those focused on sustainability.

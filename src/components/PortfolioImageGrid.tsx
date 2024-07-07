@@ -35,11 +35,7 @@ const PortfolioImageGrid = () => {
             {portfolioItems.slice(2).map((portfolio, idx) => (
               <div key={idx} className='overflow-hidden'>
                 <Link
-                  href={
-                    idx >= 1
-                      ? '/projects#read-more'
-                      : `/projects#${portfolio.anchor}`
-                  }
+                  href={`/projects#${portfolio.anchor}`}
                   scroll={false}
                 >
                   <Image

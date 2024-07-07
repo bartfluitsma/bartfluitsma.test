@@ -6,6 +6,13 @@ export const portfolioItems = [
         website: 'https://join-themovement.nl',
         anchor: 'the-movement',
       },
+      {
+        title: 'Bunastories',
+        image: '/images/Website-mockup-buna-stories.png',
+        description: "Bunastories is a web application that lists down specialty coffees worldwide.<br><br>I designed the website in a fresh and inviting way using Figma. The website is built with Next.js (React), TypeScript, Tailwind CSS, and Express.js.",
+        website: 'https://www.bunastories.com',
+        anchor: 'buna-stories',
+    },
     {
       title: 'TEN women community',
       image: '/images/ten-women-website-mockup.png',
@@ -19,14 +26,7 @@ export const portfolioItems = [
         description: 'Among Creatives is a professional photographer for sustainable brands.<br><br>I built a dynamic portfolio that connects Gatsby (React) on the front-end with the headless CMS Strapi on the backend. This way, the content is easily manageable by the photographer, while maintaining speed.',
         website: 'https://amongcreatives.com',
         anchor: 'among-creatives',
-      },
-      {
-        title: 'Buna Stories',
-        image: '/images/Website-mockup-buna-stories.png',
-        description: "Buna Stories makes it easy to find specialty coffee near you, with an emphasis on organic and fair trade.<br><br>I designed the website in a fresh and inviting way using Figma. The website will be built with Next.js (React), TypeScript, Tailwind CSS, and Node.js.",
-        website: 'https://www.figma.com/file/0JuWJIWAfnpytovBKYVkHo/Buna-stories?type=design&node-id=258%3A4419&t=s3sgJgkjivfRdBMt-1',
-        anchor: 'buna-stories',
-    },
+      }
 ];
 
 
@@ -49,14 +49,8 @@ export const SocialContactItems = [
     },
     {
         social: 'Instagram',
-        link: 'https://www.instagram.com/bartfluitsma/'
-    },
-    {
-        social: 'Github',
-        link: 'https://github.com/bartfluitsma'
+        link: 'https://www.instagram.com/sustainabledeveloper/'
     }
-
-
 ]
 
 export const AboutMeInformation = {
